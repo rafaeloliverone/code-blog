@@ -67,4 +67,13 @@ public class Post {
     public void setText(String text) {
         this.text = text;
     }
+
+    public boolean getValid() {
+        if ( this.getTitle().isEmpty() | this.getAuthor().isEmpty() | this.getText().isEmpty() ) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
 }

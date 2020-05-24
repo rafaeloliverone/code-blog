@@ -24,14 +24,16 @@
 
 <section>
   <div class="container"  style="width: 70%;">
+
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb" style="background-color: white; padding-left: 0px;">
         <li class="breadcrumb-item"><a href="/posts">Posts</a></li>
         <li class="breadcrumb-item active" aria-current="page">Novo Post</li>
       </ol>
     </nav>
+
     <div>
-<!--      <th:block th:include="mensagemValidacao"></th:block>-->
+      <th:block th:include="validationMessage"></th:block>
       <form method="post">
         <div class="form-group">
           <input type="text" class="form-control" name="title" placeholder="Título *">
@@ -49,6 +51,7 @@
         <!--<button type="submit" class="btn" style="margin-top: 10px;">Cancelar</button>-->
       </form>
     </div>
+
   </div>
 </section>
 
